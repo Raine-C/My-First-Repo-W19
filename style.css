@@ -165,7 +165,7 @@ header a:hover {
 
 .menubutton {
     border: none;
-    background-color: #fafaef;
+    background-color: transparent;
     display: none;
 }
 
@@ -560,7 +560,7 @@ footer p {
 
 /* Media Query */
 @media only screen and (max-width: 1000px) {
-    
+
     section {
         padding: 36px, 0vw;
     }
@@ -572,11 +572,14 @@ footer p {
     }
 
     .menubutton {
-        display: block;
+        display: inline;
+        margin-left: 30%;
     }
 
-    nav .logo {
-        margin-left: 50%;
+    nav {
+        display: flex;
+        justify-content: end;
+
     }
 
 
@@ -600,7 +603,7 @@ footer p {
     }
 
 
-     /* My Work */
+    /* My Work */
     #flashcardPicture,
     #flashcard {
         flex-direction: column;
@@ -644,13 +647,13 @@ footer p {
     }
 
 
-     /* Testimonial*/
+    /* Testimonial*/
     .testimonial {
         flex-direction: column;
     }
 
 
-     /* footer */
+    /* footer */
     footer P {
         text-align: center;
         margin-top: 24PX;
