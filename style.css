@@ -54,12 +54,7 @@ nav {
     padding: 24px 10vw;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.navbar {
+.logo, .navbar {
     display: flex;
     align-items: center;
 }
@@ -82,7 +77,7 @@ header li {
     display: flex;
     align-items: center;
 
-    .input {
+    #dn {
         position: absolute;
         left: -99em;
     }
@@ -181,9 +176,6 @@ section {
 /* Hero Page */
 
 .introduction {
-    /* display: flex; */
-    /* justify-content: space-evenly; */
-    /* align-items: center; */
     padding-top: 171px;
 }
 
@@ -200,7 +192,6 @@ section {
 
 .introduction h3 {
     color: #1c2321;
-    /* width: 588px; */
     margin-bottom: 40px;
     /* margin-right: 80px; */
 }
@@ -242,8 +233,7 @@ section {
 
 .mybackground {
     display: flex;
-    /* flex-direction: column; */
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 #flashcardPicture {
@@ -262,6 +252,8 @@ section {
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+    position: relative;
+    z-index: 1;
 
 }
 
@@ -316,11 +308,6 @@ section {
 
 }
 
-#flashcard {
-    display: flex;
-    justify-content: space-around;
-    /* align-items: center; */
-}
 
 .TheatreArtcard,
 .ProjectManagercard,
@@ -340,11 +327,16 @@ section {
 
 }
 
-#flashcard h4 {
+#TA h4,
+#SALES h4,
+#PM h4 {
     margin-bottom: 16px;
+    padding-left: 16px;
 }
 
-#flashcard img {
+#TA img,
+#SALES img,
+#PM img {
     margin-bottom: 16px;
     width: 48px;
     height: 48px;
@@ -564,7 +556,7 @@ footer p {
 /* Media Query */
 @media only screen and (max-width: 1000px) {
 
-/* nav bar */
+    /* nav bar */
     .navbar,
     .toggleWrapper {
         display: none;
@@ -578,12 +570,12 @@ footer p {
     nav {
         display: flex;
         justify-content: end;
-        padding: 54px 21px 24px 21px ;
+        padding: 54px 21px 24px 21px;
 
     }
 
 
-/* introduction */
+    /* introduction */
     .introduction {
         padding: 0px;
     }
@@ -601,8 +593,21 @@ footer p {
         margin: 159px 21px 72px 21px;
     }
 
+    /* My background */
+    .mybackground {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 39px 0px 39px;
+    }
 
-/* My Work */
+    .TheatreArtcard,
+    .SalesEngineercard,
+    .ProjectManagercard {
+        margin-bottom: 48px;
+    }
+
+    /* My Work */
     #flashcardPicture,
     #flashcard {
         flex-direction: column;
@@ -621,6 +626,7 @@ footer p {
             "PD3"
             "work4"
             "PD4";
+            padding: 0px 39px 0px 39px;
 
     }
 
@@ -649,12 +655,17 @@ footer p {
     /* Testimonial*/
     .testimonial {
         flex-direction: column;
+        padding: 0px 39px 0px 39px;
     }
 
     #TMPhoto {
         margin-bottom: 36px;
     }
 
+    /* Encouragement*/
+    .Encourage {
+        padding: 36px 21px 36px 21px;
+    }
 
     /* footer */
     footer P {
