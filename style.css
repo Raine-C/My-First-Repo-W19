@@ -82,7 +82,7 @@ header li {
     display: flex;
     align-items: center;
 
-    input {
+    .input {
         position: absolute;
         left: -99em;
     }
@@ -200,7 +200,7 @@ section {
 
 .introduction h3 {
     color: #1c2321;
-    width: 588px;
+    /* width: 588px; */
     margin-bottom: 40px;
     /* margin-right: 80px; */
 }
@@ -338,7 +338,6 @@ section {
 
 #flashcard h4 {
     margin-bottom: 16px;
-    /
 }
 
 #flashcard img {
@@ -561,11 +560,7 @@ footer p {
 /* Media Query */
 @media only screen and (max-width: 1000px) {
 
-    section {
-        padding: 36px, 0vw;
-    }
-
-    /* nav bar */
+/* nav bar */
     .navbar,
     .toggleWrapper {
         display: none;
@@ -579,11 +574,15 @@ footer p {
     nav {
         display: flex;
         justify-content: end;
+        padding: 54px 21px 24px 21px ;
 
     }
 
 
-    /* introduction */
+/* introduction */
+    .introduction {
+        padding: 0px;
+    }
 
     .intro {
         display: flex;
@@ -595,15 +594,11 @@ footer p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 72px;
-    }
-
-    .iText h3 {
-        max-width: 348px;
+        margin: 159px 21px 72px 21px;
     }
 
 
-    /* My Work */
+/* My Work */
     #flashcardPicture,
     #flashcard {
         flex-direction: column;
@@ -650,6 +645,10 @@ footer p {
     /* Testimonial*/
     .testimonial {
         flex-direction: column;
+    }
+
+    #TMPhoto {
+        margin-bottom: 36px;
     }
 
 
