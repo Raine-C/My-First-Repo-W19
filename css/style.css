@@ -182,7 +182,7 @@ section {
 .intro {
     display: flex;
     /* justify-content: space-evenly; */
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .introduction h1 {
@@ -204,8 +204,10 @@ section {
 
 .introduction h5 {
     color: #1c2321;
-    padding: 16px 24px;
+    padding: 14px 24px;
     margin-right: 24px;
+    border: 1.8px #1c2321 solid ;
+    border-radius: 20px;
 }
 
 .ctabutton a {
@@ -224,6 +226,7 @@ section {
     box-shadow: 5px 10px 80px #888888;
 }
 
+
 /* My Background */
 .title h2 {
     color: #1c2321;
@@ -233,7 +236,7 @@ section {
 
 .mybackground {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 #flashcardPicture {
