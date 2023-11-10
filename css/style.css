@@ -164,6 +164,14 @@ header a:hover {
     display: none;
 }
 
+.dropdown {
+    /* display: none; */
+}
+
+.dropdownMenu a {
+    /* display: flex;
+    flex-direction: column; */
+}
 
 
 
