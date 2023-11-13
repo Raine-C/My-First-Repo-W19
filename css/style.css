@@ -54,6 +54,12 @@ nav {
     padding: 24px 10vw;
 }
 
+.navbarlist {
+    display: flex;
+    justify-content: space-between;
+    /* padding: 0px 10vw; */
+}
+
 .logo, .navbar {
     display: flex;
     align-items: center;
@@ -68,6 +74,10 @@ nav {
 header li {
     display: inline;
     margin-right: 24px;
+}
+
+dl, ol, ul {
+    margin-bottom: 0rem !important;
 }
 
 
@@ -635,8 +645,7 @@ footer p {
 @media only screen and (max-width: 1000px) {
 
     /* nav bar */
-    .navbar,
-    .toggleWrapper {
+    .toggleWrapper, .navbarlist {
         display: none;
     }
 

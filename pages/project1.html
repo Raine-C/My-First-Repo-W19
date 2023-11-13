@@ -27,53 +27,54 @@
 </head>
 
 <body>
+    <!-- navBar  -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        <nav class="navbar">
+            <div class="container-xxl align-items-center">
+                <a href="/index.html" class="navbar-brand"><img src="/image/RcLogo.png" alt="LOGO" width="56px"
+                        height="56px"></a>
+                <div class="navbarlist">
+                    <ul>
+                        <li><a href="#myworklist">Work</a></li>
+                        <!-- <li><a href="#">About me</a></li> -->
+                        <li><a href="#" target="_blank">Resume</a>
+                            <img class="resumebox" style="margin-bottom:3px;" src="/image/arrow-right-up.png"
+                                alt="ArrowRightUp" width="24px" height="24px">
                         </li>
                     </ul>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                </div>
+
+                <div class="toggleWrapper">
+                    <input type="checkbox" class="dn" id="dn" />
+                    <label for="dn" class="toggle">
+                        <span class="toggle__handler"></span>
+                    </label>
+                </div>
+                <!-- toggle button for mobile nav -->
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"><img src="/image/menubutton.png" height="44px" width="44px"
+                            alt="menubutton">
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#myworklist">Work</a></li>
+                        <li><a class="dropdown-item" href="#">Resume</a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
+
+
     <main>
         <!-- Thumbnail -->
-        <section class="thumbnail">
-            <img src="/image/photoWF.png" class="img-fluid" alt="thumbnail">
+        <section class="thumbnail" style="padding-top: 171PX;">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-s-4">
+                    <img src="/image/photoWF.png" class="img-fluid" alt="Thumbnail">
+                </div>
+            </div>
+
         </section>
 
 
@@ -257,7 +258,7 @@
     </main>
 
 
-<!-- Footer -->
+    <!-- Footer -->
 
     <footer>
         <div id="FTop">
