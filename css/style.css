@@ -245,13 +245,6 @@ section {
 
 }
 
-.introduction h5 {
-    color: #1c2321;
-    padding: 14px 24px;
-    margin-right: 24px;
-    border: 1.8px #1c2321 solid ;
-    border-radius: 20px;
-}
 
 .ctabutton a {
     text-decoration: none;
@@ -263,6 +256,7 @@ section {
     color: #fafaef;
     font-family: Philosopher;
     padding: 16px 24px;
+    margin-right: 24px;
     border-radius: 20px;
     border: 0px;
     cursor: pointer;
